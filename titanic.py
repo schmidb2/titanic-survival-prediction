@@ -1,13 +1,3 @@
-##import csv
-##from graphics import *
-##import matplotlib.pyplot as plt
-##import tensorflow as tf
-##from tensorflow import keras
-##import pandas as pd
-##import numpy as np
-##import pandas
-##from pandas import read_csv
-
 import numpy as np
 import pandas as pd
 import seaborn as sn
@@ -18,7 +8,7 @@ from sklearn.metrics import confusion_matrix
 import matplotlib.pyplot as plt
 
 #read in data
-data = pd.read_csv('passenger list.csv')
+data = pd.read_csv('passenger_list.csv')
 
 #drop irrelevant data
 data= data.drop(columns=['home.dest','body','boat','cabin','name','ticket'],axis=1)
